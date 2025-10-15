@@ -11,8 +11,8 @@
   DTS:LocaleID="13322"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="13"
-  DTS:VersionGUID="{99AAB831-828D-40C2-8248-A739DD1875AF}">
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{C7421AF4-E592-43CD-830C-6D739DAF3469}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -53,24 +53,47 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkSFtEw42oU+LSW2nZPIh8wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAP+sID5kugRUUUgUt3cuG1xkxIQmC+gEFP7QF6dRIWIgAAAAAOgAAAAAIAACAAAACrc92RMGt+67zjvmzeMbVCr/+/ySQsZA8XS0/W4qSHIhAAAABlfa15TcJzyWf5CoskypUsQAAAACkQqa4ShJFpGQkO+ZijH/klcELptjpiAjG4SqUvYSOMMvUq4oqCc5OJfxb4WRrt0q92L1Xy/rreNVwbJ3Dk0/Q</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkSFtEw42oU+LSW2nZPIh8wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA0Oijl9gkIq1RDDppARIUBQOiUJKqeRMUbTNF1HgTjIwAAAAAOgAAAAAIAACAAAACwQF2qsrlgSIYo0OcP014Xq4gSuXgEiQQI5/H6VQvYiRAAAAD9pg11JX6h7MRscLYf2klwQAAAALBhE8h781EXyJrBHOWBTfHDfQRTb6nZvi4PiPDwFDQUFsPgRP9dDLQdDN63Z3uC+aSiYz9TLizWxv8/OEGSSBg</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.BikeZ_DW.sa 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7F28E043-7F0C-47AD-A3C3-A4E9F33B4992}"
+      DTS:ObjectName="localhost.BikeZ_DW.sa 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=BikeZ_DW;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkSFtEw42oU+LSW2nZPIh8wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACdOGud+744LD/FLvGuHSrySVYv58PKIsk5Y0/nKLviXgAAAAAOgAAAAAIAACAAAACfIZk6blOTRzBR4Ozso09mpWP7z7wL1/3BDokLy8TeihAAAADIDxXrBzQCPjprZ4LaEvIVQAAAAAL4Tk6tVBq2BST4DGWgdqZwnOzRKRk+e0oe9meQiJhPKQ6VcFr4kJgZ17GBQfIcsnTUK0CT3CfORvmG2GWy31w</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.BikeZ_DW.sa 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{5CDAAC7F-606F-4BD8-A9F2-652D4163BF19}"
+      DTS:ObjectName="localhost.BikeZ_DW.sa 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;User ID=sa;Initial Catalog=BikeZ_DW;Provider=SQLNCLI11.1;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAkSFtEw42oU+LSW2nZPIh8wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAByQkPDb0ZU0pdoKsIfzSsfQMRovlnZ8BOpFVWEvN3BdQAAAAAOgAAAAAIAACAAAAA/x2dxzhqv3Hmt17pAMYnIUJW6N+IxOB8fwoY+34L4hBAAAABEL535gQpp00a2h6I3tRAsQAAAAHqX1juSb1xvD0D11FOaL1fJ2mW84CHiMkjdkjFWzZqhEahEMRmaW3p4mPmp+Ww8CzgBGv0CC6BcD50Pmyt9NA4</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables />
   <DTS:Executables>
-    <DTS:Executable
-      DTS:refId="Package\Contenedor de secuencias"
-      DTS:CreationName="STOCK:SEQUENCE"
-      DTS:Description="Contenedor de secuencias"
-      DTS:DTSID="{FA53A599-970C-4E02-8A86-0C35C4846D07}"
-      DTS:ExecutableType="STOCK:SEQUENCE"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Contenedor de secuencias">
-      <DTS:Variables />
-      <DTS:Executables />
-    </DTS:Executable>
     <DTS:Executable
       DTS:refId="Package\Crear DW"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
@@ -84,23 +107,8 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
+          SQLTask:Connection="{5CDAAC7F-606F-4BD8-A9F2-652D4163BF19}"
           SQLTask:SqlStatementSource="USE MASTER&#xA;GO&#xA;&#xA;/* ELIMINA BASE BikeZ_DW, SI EXISTE */&#xA;IF EXISTS (SELECT name FROM sys.databases WHERE name = N'BikeZ_DW')&#xA;BEGIN&#xA;    ALTER DATABASE BikeZ_DW SET SINGLE_USER WITH ROLLBACK IMMEDIATE;&#xA;    DROP DATABASE BikeZ_DW;&#xA;END&#xA;&#xA;&#xA;/* CREACION DE LA BASE DE DATOS DEL DATAWAREHOUSE &#xA;                                                &#xA;   considera 5 Dimensiones : Producto, Clientes, Empleado, Territorio y TIEMPO &#xA;             1 Tabla de Hechos : VENTAS                                      &#xA;*/&#xA;create database BikeZ_DW;&#xA;go&#xA;&#xA;use BikeZ_DW&#xA;go&#xA;&#xA;-- ====================================================================&#xA;-- Creación Tabla DIMENSION PRODUCTO&#xA;-- ====================================================================&#xA;CREATE TABLE DIMProducto (&#xA;    productokey&#x9;&#x9;&#x9;&#x9;INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED,&#xA;    producto_id&#x9;&#x9;&#x9;&#x9;int not null,&#xA;    producto_nombre&#x9;&#x9;&#x9;nvarchar(50) not null,&#xA;    producto_color&#x9;&#x9;&#x9;nvarchar(15) not null,&#xA;&#x9;producto_categoria&#x9;&#x9;nvarchar(50) not null,&#xA;&#x9;fecha_ini  &#x9; &#x9;&#x9;&#x9;date not null ,&#xA;&#x9;fecha_fin&#x9;&#x9;&#x9;&#x9;date not null&#xA;);&#xA;&#xA;/* Creación Tabla DIMENSION CLIENTE */&#xA;CREATE TABLE DIMCliente (&#xA;    clientekey&#x9;&#x9;&#x9;&#x9;&#x9;INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED,&#xA;    cliente_id&#x9;&#x9;&#x9;&#x9;&#x9;INT not null,&#xA;&#x9;cliente_nombre&#x9;&#x9;&#x9;&#x9;nvarchar(255) not null,&#xA;&#x9;cliente_sexo&#x9;&#x9;&#x9;&#x9;nchar(1) not null,&#xA;&#x9;cliente_estado_civil&#x9;&#x9;nchar(10) not null,&#xA;&#x9;fecha_ini&#x9;&#x9;&#x9;&#x9;&#x9;date not null ,&#xA;&#x9;fecha_fin&#x9;&#x9;&#x9;&#x9;&#x9;date not null&#xA;);&#xA;&#xA;/* Creación Tabla DIMENSION EMPLEADO */&#xA;CREATE TABLE DIMEmpleado (&#xA;    empleadokey&#x9;&#x9;&#x9;&#x9;&#x9;INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED,&#xA;&#x9;empleado_id&#x9;&#x9;&#x9;&#x9;&#x9;INT not null,&#xA;&#x9;empleado_cargo&#x9;&#x9;&#x9;&#x9;nvarchar(50) not null,&#xA;&#x9;empleado_nacimiento&#x9;&#x9;&#x9;date not null,&#xA;&#x9;empleado_estado_civil&#x9;&#x9;nchar(1) not null,&#xA;&#x9;empleado_sexo&#x9;&#x9;&#x9;&#x9;nchar(1) not null,&#xA;&#x9;empleado_contratacion&#x9;&#x9;date not null,&#xA;&#x9;empleado_horas_vacaciones&#x9;smallint not null,&#xA;&#x9;empleado_territorio&#x9;&#x9;&#x9;nvarchar(50) not null,&#xA;&#x9;empleado_grupo&#x9;&#x9;&#x9;&#x9;nvarchar(50) not null,&#xA;&#x9;empleado_pais&#x9;&#x9;&#x9;&#x9;nvarchar(50) not null,&#xA;&#x9;fecha_ini&#x9;&#x9;&#x9;&#x9;&#x9;date not null ,&#xA;&#x9;fecha_fin&#x9;&#x9;&#x9;&#x9;&#x9;date not null&#xA;);&#xA;&#xA;/* Creación Tabla DIMENSION TERRITORIO */&#xA;CREATE TABLE DIMTerritorio (&#xA;    territoriokey&#x9;&#x9;&#x9;&#x9;INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED,&#xA;&#x9;territorio_id&#x9;&#x9;&#x9;&#x9;int not null,&#xA;    territorio_nombre&#x9;&#x9;&#x9;nvarchar(255) not null,&#xA;&#x9;territorio_grupo&#x9;&#x9;&#x9;nvarchar(255) not null,&#xA;&#x9;territorio_pais&#x9;&#x9;&#x9;&#x9;nvarchar(50) not null,&#xA;&#x9;fecha_ini&#x9;&#x9;&#x9;&#x9;&#x9;date not null,&#xA;&#x9;fecha_fin&#x9;&#x9;&#x9;&#x9;&#x9;date not null&#xA;);&#xA;&#xA;/* Creación Tabla DIMENSION TIEMPO  */&#xA;CREATE TABLE DIMTiempo (&#xA;    tiempokey&#x9;&#x9;INT IDENTITY(1,1) PRIMARY KEY NONCLUSTERED,&#xA;    fecha&#x9;&#x9;&#x9;date not null,&#xA;&#x9;fechaAAAAMMDD&#x9;INT  not null,&#xA;&#x9;año&#x9;&#x9;&#x9;&#x9;smallint not null,&#xA;&#x9;semestre&#x9;&#x9;smallint not null,&#xA;&#x9;trimestre&#x9;&#x9;smallint not null,&#xA;&#x9;mes&#x9;&#x9;&#x9;&#x9;smallint not null,&#xA;&#x9;semana&#x9;&#x9;&#x9;smallint not null,&#xA;&#x9;dia&#x9;&#x9;&#x9;&#x9;smallint not null,&#xA;&#x9;diasemana&#x9;&#x9;smallint not null,&#xA;&#x9;nsemestre&#x9;&#x9;varchar(15) not null,&#xA;&#x9;ntrimestre&#x9;&#x9;varchar(15) not null,&#xA;&#x9;nmes&#x9;&#x9;&#x9;varchar(15) not null,&#xA;&#x9;nmes3L&#x9;&#x9;&#x9;varchar(15) not null,&#xA;&#x9;ndiasemana&#x9;&#x9;varchar(15) not null,&#xA;    ndiasemana3L&#x9;varchar(15)  not null&#xA;);&#xA;&#xA;/* Creación Tabla HECHOS VENTAS  */&#xA;CREATE TABLE HECHOSVentas (&#xA;    tiempokey&#x9;&#x9;&#x9;&#x9;INT not null,&#xA;&#x9;productokey&#x9;&#x9;&#x9;&#x9;INT not null,&#xA;    territoriokey&#x9;&#x9;&#x9;INT not null,&#xA;    clientekey&#x9;&#x9;&#x9;&#x9;INT not null,&#xA;    empleadokey&#x9;&#x9;&#x9;&#x9;INT not null,&#xA;    total_neto&#x9;&#x9;&#x9;&#x9;INT not null,&#x9;&#x9;&#x9;/* ( PRECIO UNITARIO * CANTIDAD ) / 1,19 */&#xA;    total_impuesto&#x9;&#x9;&#x9;INT not null,&#x9;&#x9;&#x9;/* ( PRECIO UNITARIO * CANTIDAD ) * 19%  */&#xA;    total_bruto&#x9;&#x9;&#x9;&#x9;INT not null,           /*   PRECIO UNITARIO * CANTIDAD          */ &#xA;&#x9;total_cantidad&#x9;&#x9;&#x9;INT not null&#x9;&#x9;&#x9;/*   CANTIDAD                            */&#xA;);&#xA;&#xA;-- ====================================================================================&#xA;-- DEFINICION DE RELACIONES ENTRE DIMENSIONES Y HECHOS&#xA;-- ====================================================================================&#xA;&#xA;EXEC SYS.sp_MSforeachtable 'ALTER TABLE ? NOCHECK CONSTRAINT ALL'&#xA;GO&#xA;&#xA;ALTER TABLE HECHOSVentas&#xA;ADD FOREIGN KEY (productokey)&#x9;REFERENCES DIMProducto   (productokey);&#xA;&#xA;ALTER TABLE HECHOSVentas&#xA;ADD FOREIGN KEY (tiempokey)&#x9;&#x9;REFERENCES DIMTiempo     (tiempokey);&#xA;&#xA;ALTER TABLE HECHOSVentas&#xA;ADD FOREIGN KEY (territoriokey)&#x9;REFERENCES DIMTerritorio (territoriokey);&#xA;&#xA;ALTER TABLE HECHOSVentas&#xA;ADD FOREIGN KEY (clientekey)&#x9;REFERENCES DIMcliente    (clientekey);&#xA;&#xA;ALTER TABLE HECHOSVentas&#xA;ADD FOREIGN KEY (empleadokey)&#x9;REFERENCES DIMEmpleado   (empleadokey);&#xA;go&#xA;&#xA;-- CREACION DE INDICES DE LAS TABLAS &#xA;----------------------------------------------------&#xA;&#xA;CREATE CLUSTERED&#x9;INDEX I_DIMProducto_nombre&#x9; ON DIMProducto   (producto_nombre);&#xA;&#xA;CREATE CLUSTERED&#x9;INDEX I_DIMCliente_nombre&#x9; ON DIMCliente    (cliente_nombre);&#xA;&#xA;CREATE CLUSTERED&#x9;INDEX I_DIMEmpleado_nombre&#x9; ON DIMEmpleado&#x9;  (empleado_cargo);&#xA;&#xA;CREATE CLUSTERED&#x9;INDEX I_DIMTerritorio_nombre ON DIMTerritorio (territorio_nombre);&#xA;&#xA;CREATE CLUSTERED&#x9;INDEX I_DIMTiempo_fecha&#x9;&#x9; ON DIMtiempo     (fecha);&#xA;&#xA;go&#xA;&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Crear y poblar DB"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Tarea Ejecutar SQL"
-      DTS:DTSID="{03477CD8-4AB3-4609-A63F-E5B19ABFF5A7}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Crear y poblar DB"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022 CTP2.0; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:SqlStatementSource="USE [master]&#xA;GO&#xA;/****** Object:  Database [BikeZ_DB]    Script Date: 26-09-2025 11:23:53 ******/&#xA;CREATE DATABASE [BikeZ_DB]&#xA; CONTAINMENT = NONE&#xA; ON  PRIMARY &#xA;( NAME = N'BikeZ', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA\BikeZ.mdf' , SIZE = 16384KB , MAXSIZE = UNLIMITED, FILEGROWTH = 1024KB )&#xA; LOG ON &#xA;( NAME = N'BikeZ_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA\BikeZ_log.ldf' , SIZE = 26816KB , MAXSIZE = 2048GB , FILEGROWTH = 10%)&#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET COMPATIBILITY_LEVEL = 100&#xA;GO&#xA;IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))&#xA;begin&#xA;EXEC [BikeZ_DB].[dbo].[sp_fulltext_database] @action = 'enable'&#xA;end&#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET ANSI_NULL_DEFAULT OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET ANSI_NULLS OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET ANSI_PADDING OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET ANSI_WARNINGS OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET ARITHABORT OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET AUTO_CLOSE OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET AUTO_SHRINK OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET AUTO_UPDATE_STATISTICS ON &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET CURSOR_CLOSE_ON_COMMIT OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET CURSOR_DEFAULT  GLOBAL &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET CONCAT_NULL_YIELDS_NULL OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET NUMERIC_ROUNDABORT OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET QUOTED_IDENTIFIER OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET RECURSIVE_TRIGGERS OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET  DISABLE_BROKER &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET AUTO_UPDATE_STATISTICS_ASYNC OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET DATE_CORRELATION_OPTIMIZATION OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET TRUSTWORTHY OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET ALLOW_SNAPSHOT_ISOLATION OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET PARAMETERIZATION SIMPLE &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET READ_COMMITTED_SNAPSHOT OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET HONOR_BROKER_PRIORITY OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET RECOVERY SIMPLE &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET  MULTI_USER &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET PAGE_VERIFY CHECKSUM  &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET DB_CHAINING OFF &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET TARGET_RECOVERY_TIME = 0 SECONDS &#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET DELAYED_DURABILITY = DISABLED &#xA;GO&#xA;EXEC sys.sp_db_vardecimal_storage_format N'BikeZ_DB', N'ON'&#xA;GO&#xA;ALTER DATABASE [BikeZ_DB] SET QUERY_STORE = OFF&#xA;GO&#xA;USE [BikeZ_DB]&#xA;GO&#xA;/****** Object:  Table [dbo].[Almacenes]    Script Date: 26-09-2025 11:23:54 ******/&#xA;SET ANSI_NULLS ON&#xA;GO&#xA;SET QUOTED_IDENTIFIER ON&#xA;GO&#xA;CREATE TABLE [dbo].[Almacenes](&#xA;&#x9;[AlmacenID] [int] NOT NULL,&#xA;&#x9;[Almacen] [nvarchar](50) NOT NULL,&#xA;&#x9;[TerritorioID] [int] NULL,&#xA;PRIMARY KEY CLUSTERED &#xA;(&#xA;&#x9;[AlmacenID] ASC&#xA;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]&#xA;) ON [PRIMARY]&#xA;GO&#xA;/****** Object:  Table [dbo].[Categorias]    Script Date: 26-09-2025 11:23:54 ******/&#xA;SET ANSI_NULLS ON&#xA;GO&#xA;SET QUOTED_IDENTIFIER ON&#xA;GO&#xA;CREATE TABLE [dbo].[Categorias](&#xA;&#x9;[CategoriaID] [int] NOT NULL,&#xA;&#x9;[Categoria] [nvarchar](50) NOT NULL,&#xA;PRIMARY KEY CLUSTERED &#xA;(&#xA;&#x9;[CategoriaID] ASC&#xA;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]&#xA;) ON [PRIMARY]&#xA;GO&#xA;/****** Object:  Table [dbo].[Clientes]    Script Date: 26-09-2025 11:23:54 ******/&#xA;SET ANSI_NULLS ON&#xA;GO&#xA;SET QUOTED_IDENTIFIER ON&#xA;GO&#xA;CREATE TABLE [dbo].[Clientes](&#xA;&#x9;[ClienteID] [int] NOT NULL,&#xA;&#x9;[Nombre] [nvarchar](50) NULL,&#xA;&#x9;[Apellido] [nvarchar](50) NULL,&#xA;&#x9;[Sexo] [nchar](1) NULL,&#xA;&#x9;[EstadoCivil] [nchar](10) NULL,&#xA; CONSTRAINT [PK__Clientes__71ABD0A71A14E395] PRIMARY KEY CLUSTERED &#xA;(&#xA;&#x9;[ClienteID] ASC&#xA;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]&#xA;) ON [PRIMARY]&#xA;GO&#xA;/****** Object:  Table [dbo].[DetalleVentas]    Script Date: 26-09-2025 11:23:54 ******/&#xA;SET ANSI_NULLS ON&#xA;GO&#xA;SET QUOTED_IDENTIFIER ON&#xA;GO&#xA;CREATE TABLE [dbo].[DetalleVentas](&#xA;&#x9;[VentaID] [int] NOT NULL,&#xA;&#x9;[DetalleVentaID] [int] NOT NULL,&#xA;&#x9;[Cantidad] [smallint] NOT NULL,&#xA;&#x9;[ProductoID] [int] NOT NULL,&#xA;&#x9;[PrecioUnitario] [money] NOT NULL,&#xA; CONSTRAINT [PK_DetalleVentas] PRIMARY KEY CLUSTERED &#xA;(&#xA;&#x9;[VentaID] ASC,&#xA;&#x9;[DetalleVentaID] ASC&#xA;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]&#xA;) ON [PRIMARY]&#xA;GO&#xA;/****** Object:  Table [dbo].[Empleados]    Script Date: 26-09-2025 11:23:54 ******/&#xA;SET ANSI_NULLS ON&#xA;GO&#xA;SET QUOTED_IDENTIFIER ON&#xA;GO&#xA;CREATE TABLE [dbo].[Empleados](&#xA;&#x9;[EmpleadoID] [int] NOT NULL,&#xA;&#x9;[Cargo] [nvarchar](50) NOT NULL,&#xA;&#x9;[FechaNacimiento] [date] NOT NULL,&#xA;&#x9;[EstadoCivil] [nchar](1) NOT NULL,&#xA;&#x9;[Genero] [nchar](1) NOT NULL,&#xA;&#x9;[FechaContratacion] [date] NOT NULL,&#xA;&#x9;[HorasVacaciones] [smallint] NOT NULL,&#xA;&#x9;[TerritorioID] [int] NULL,&#xA;PRIMARY KEY CLUSTERED &#xA;(&#xA;&#x9;[EmpleadoID] ASC&#xA;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]&#xA;) ON [PRIMARY]&#xA;GO&#xA;/****** Object:  Table [dbo].[Paises]    Script Date: 26-09-2025 11:23:54 ******/&#xA;SET ANSI_NULLS ON&#xA;GO&#xA;SET QUOTED_IDENTIFIER ON&#xA;GO&#xA;CREATE TABLE [dbo].[Paises](&#xA;&#x9;[PaisID] [nvarchar](3) NOT NULL,&#xA;&#x9;[Pais] [nvarchar](50) NOT NULL,&#xA;PRIMARY KEY CLUSTERED &#xA;(&#xA;&#x9;[PaisID] ASC&#xA;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]&#xA;) ON [PRIMARY]&#xA;GO&#xA;/****** Object:  Table [dbo].[Productos]    Script Date: 26-09-2025 11:23:54 ******/&#xA;SET ANSI_NULLS ON&#xA;GO&#xA;SET QUOTED_IDENTIFIER ON&#xA;GO&#xA;CREATE TABLE [dbo].[Productos](&#xA;&#x9;[ProductoID] [int] NOT NULL,&#xA;&#x9;[Producto] [nvarchar](50) NOT NULL,&#xA;&#x9;[Color] [nvarchar](15) NULL,&#xA;&#x9;[CategoriaID] [int] NULL,&#xA;PRIMARY KEY CLUSTERED &#xA;(&#xA;&#x9;[ProductoID] ASC&#xA;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]&#xA;) ON [PRIMARY]&#xA;GO&#xA;/****** Object:  Table [dbo].[Territorios]    Script Date: 26-09-2025 11:23:54 ******/&#xA;SET ANSI_NULLS ON&#xA;GO&#xA;SET QUOTED_IDENTIFIER ON&#xA;GO&#xA;CREATE TABLE [dbo].[Territorios](&#xA;&#x9;[TerritorioID] [int] NOT NULL,&#xA;&#x9;[Territorio] [nvarchar](50) NOT NULL,&#xA;&#x9;[PaisID] [nvarchar](3) NOT NULL,&#xA;&#x9;[Grupo] [nvarchar](50) NOT NULL,&#xA;PRIMARY KEY CLUSTERED &#xA;(&#xA;&#x9;[TerritorioID] ASC&#xA;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]&#xA;) ON [PRIMARY]&#xA;GO&#xA;/****** Object:  Table [dbo].[Ventas]    Script Date: 26-09-2025 11:23:54 ******/&#xA;SET ANSI_NULLS ON&#xA;GO&#xA;SET QUOTED_IDENTIFIER ON&#xA;GO&#xA;CREATE TABLE [dbo].[Ventas](&#xA;&#x9;[VentaID] [int] NOT NULL,&#xA;&#x9;[Fecha] [datetime] NOT NULL,&#xA;&#x9;[FechaEnvio] [datetime] NULL,&#xA;&#x9;[ClienteID] [int] NOT NULL,&#xA;&#x9;[VendedorID] [int] NULL,&#xA;&#x9;[TerritorioID] [int] NULL,&#xA;PRIMARY KEY CLUSTERED &#xA;(&#xA;&#x9;[VentaID] ASC&#xA;)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]&#xA;) ON [PRIMARY]&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (292, N'Next-Door Bike Store', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (294, N'Professional Sales and Service', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (296, N'Riders Company', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (298, N'The Bike Mechanics', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (300, N'Nationwide Supply', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (302, N'Area Bike Accessories', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (304, N'Bicycle Accessories and Kits', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (306, N'Clamps &amp; Brackets Co.', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (308, N'Valley Bicycle Specialists', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (310, N'New Bikes Company', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (312, N'Vinyl and Plastic Goods Corporation', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (314, N'Top of the Line Bikes', 8)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (316, N'Fun Toys and Bikes', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (318, N'Great Bikes ', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (320, N'Metropolitan Sales and Rental', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (322, N'Irregulars Outlet', 8)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (324, N'Valley Toy Store', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (326, N'Worthwhile Activity Store', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (328, N'Purchase Mart', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (330, N'Major Sport Suppliers', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (332, N'Family''s Favorite Bike Shop', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (334, N'Global Plaza', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (336, N'Imported and Domestic Cycles', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (338, N'Systematic Sales', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (340, N'eCommerce Bikes', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (342, N'Mountain Toy Store', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (344, N'Retail Sales and Service', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (346, N'Designated Distributors', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (348, N'Bold Bike Accessories', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (350, N'Twin Cycles', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (352, N'Tiny Bike Boutique', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (354, N'Acclaimed Bicycle Company', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (356, N'Serious Cycles', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (358, N'Quality Bike Sales', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (360, N'Novelty Bikes', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (362, N'Distinctive Cycles Sales &amp; Service', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (364, N'Leading Bike Distributors', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (366, N'Activity Center', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (368, N'Brightwork Company', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (370, N'Resale Services', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (372, N'The Gear Store', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (374, N'Immense Manufacturing Company', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (376, N'Extended Bike Sales', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (378, N'Pedaling Components', 8)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (380, N'Workout Emporium', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (382, N'Work and Play Association', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (384, N'Seaside Bike Works', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (386, N'Nice Bikes', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (388, N'Remarkable Bike Store', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (390, N'Road-Way Mart', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (392, N'Small Cycle Store', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (394, N'Blue-Ribbon Bike Company', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (396, N'Flawless Bike Shop', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (398, N'Grand Bicycle Stores', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (400, N'Exertion Activities Club', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (402, N'Impromptu Trips', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (404, N'Margie''s Travel', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (406, N'Kickstand Sellers', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (408, N'Nearest Bike Store', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (410, N'Fast Bike Works', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (412, N'Gasless Cycle Shop', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (414, N'Lubricant and Grease Suppliers', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (416, N'Teen Discount Store', 8)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (418, N'Transportation Options', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (420, N'Capital Riding Supplies', 8)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (422, N'Bike Boutique', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (424, N'Bikes Anyone?', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (426, N'Cross-town Parts Shop', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (428, N'Finer Cycle Shop', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (430, N'Center Cycle Shop', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (432, N'Bulk Discount Store', 10)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (434, N'Country Parts Shop', 7)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (436, N'Second Bike Shop', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (438, N'First-Rate Outlet', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (440, N'Juvenile Sports Equipment', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (442, N'Another Bicycle Company', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (444, N'Fourth Bike Store', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (446, N'Rodeway Bike Store', 8)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (448, N'Traction Tire Company', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (450, N'Unsurpassed Bikes', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (452, N'Field Trip Inc', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (454, N'Tire Company', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (456, N'Uncompromising Quality Co', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (458, N'Metallic Paint and Overcoat Co', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (460, N'Pro Sporting Goods', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (462, N'Sporting Goods and Bicycle Shop', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (464, N'Odometers and Accessories Company', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (466, N'Scratch-Resistant Finishes Company', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (468, N'Topnotch Bikes', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (470, N'Unicycles, Bicycles, and Tricycles', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (472, N'Safe Cycles Shop', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (474, N'Number 1 Supply', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (476, N'Industrial Supplies', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (478, N'Golf and Cycle Store', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (480, N'Front Runner Bikes', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (482, N'Favorite Toy Distributor', 7)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (484, N'World Bike Discount Store', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (486, N'Global Sporting Goods', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (488, N'Historic Bicycle Sales', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (490, N'Commuter Bicycle Store', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (492, N'Coalition Bike Company', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (494, N'Travel Systems', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (496, N'Grease and Oil Products Company', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (498, N'Moderately-Priced Bikes Store', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (500, N'Toy Manufacturing Inc', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (502, N'Eighty Toy Stores', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (504, N'Economy Bikes Company', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (506, N'Third Bike Store', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (508, N'Atypical Bike Company', 7)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (510, N'Bikes for Two', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (512, N'Metal Processing Company', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (514, N'Widget Bicycle Specialists', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (516, N'Initial Bike Company', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (518, N'Latest Sports Equipment', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (520, N'Modern Bike Store', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (522, N'Raw Materials Inc', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (524, N'Lots of Bikes Storehouse', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (526, N'Futuristic Bikes', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (528, N'Parcel Express Delivery Service', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (530, N'Outdoor Distributors', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (532, N'North Bike Company', 8)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (534, N'Prosperous Tours', 10)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (536, N'Nonskid Tire Company', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (538, N'Amalgamated Parts Shop', 8)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (540, N'Metro Bike Works', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (542, N'Best o'' Bikes', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (544, N'Painters Bicycle Specialists', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (546, N'Client Discount Store', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (548, N'Eastside Sporting Goods', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (550, N'Helmets and Cycles', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (552, N'Requisite Part Supply', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (554, N'Racks and Security Systems', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (556, N'Mechanical Products Ltd.', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (558, N'Commendable Bikes', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (560, N'Online Bike Sellers', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (562, N'Custom Accessories Company', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (564, N'Unusual Bicycle Company', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (566, N'Courteous Bicycle Specialists', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (568, N'Hobby Store', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (570, N'Professional Cycle Store', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (572, N'Bike Universe', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (574, N'Fifth Bike Store', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (576, N'Independent Outlet', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (578, N'Rambling Tours', 8)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (580, N'Farthest Bike Store', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (582, N'Excellent Bikes', 8)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (584, N'Curbside Universe', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (586, N'Alternative Vehicles', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (588, N'Channel Outlet', 10)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (590, N'Full Sports Supply', 7)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (592, N'Retail Mall', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (594, N'Racing Store', 7)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (596, N'Metro Metals Co.', 10)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (598, N'Sheet Metal Manufacturing', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (600, N'Thorough Parts and Repair Services', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (602, N'Uttermost Bike Shop', 10)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (604, N'Mechanical Sports Center', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (606, N'Speedometer Sales', 8)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (608, N'Two-Wheeled Transit Company', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (610, N'Mountain Emporium', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (612, N'Metro Cycle Shop', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (614, N'Outdoor Sporting Goods', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (616, N'Tread Industries', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (618, N'Petroleum Products Distributors', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (620, N'Tandem Bicycle Store', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (622, N'Bikes and Motorbikes', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (624, N'Budget Toy Store', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (626, N'Camping and Sports Store', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (628, N'Ace Bicycle Supply', 7)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (630, N'Rural Department Store', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (632, N'Sports Commodities', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (634, N'Riverside Company', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (636, N'Bicycle Exporters', 8)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (638, N'Responsible Bike Dealers', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (640, N'Western Bike Supplies', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (642, N'Advanced Bike Components', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (644, N'Aerobic Exercise Company', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (646, N'Rural Sporting Goods', 8)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (648, N'Corner Bicycle Supply', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (650, N'Distance Bikes', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (652, N'Westside Plaza', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (654, N'Ultimate Bike Shop', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (656, N'Outstanding Cycles', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (658, N'Vigorous Sports Store', 10)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (660, N'Sports Merchandise', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (662, N'Fitness Toy Store', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (664, N'Casual Bicycle Store', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (666, N'Fitness Discount Store', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (668, N'General Cycle Storehouse', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (670, N'Fitness Cycling', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (672, N'Good Bike Shop', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (674, N'Imaginary Toys', 1)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (676, N'Inexpensive Parts Shop', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (678, N'Nuts and Bolts Mfg.', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (680, N'Principal Bicycle Supply', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (682, N'Thrilling Bike Tours', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (684, N'This Area Sporting Goods', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (686, N'Full-Service Bike Store', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (688, N'Plastic Products Manufacturers', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (690, N'Kids and Adults Cycle Shop', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (692, N'Grand Discount Store', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (694, N'Genuine Bike Shop', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (696, N'Extreme Riding Supplies', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (698, N'Bike Rims Company', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (700, N'Fleet Bikes', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (702, N'Local Hardware Factory', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (704, N'Only Bikes and Accessories', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (706, N'Rental Gallery', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (708, N'South Bike Company', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (710, N'Wonderful Bikes Inc.', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (712, N'Another Sporting Goods Company', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (714, N'Discount Bicycle Specialists', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (716, N'Famous Bike Sales and Service', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (718, N'First Supplies', 9)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (720, N'Machines &amp; Cycles Store', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (722, N'Pedals Warehouse', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (724, N'Two Wheels Cycle Store', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (726, N'Westside Cycle Store', 3)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (728, N'Wholesale Bikes', 2)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (730, N'Very Best Sports Supply', 8)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (732, N'Urban Sports Emporium', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (734, N'Superlative Bikes', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (736, N'Primary Cycle Shop', 8)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (738, N'Sixth Bike Store', 6)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (740, N'Touring Services', 5)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (742, N'Vehicle Shop', 4)&#xA;GO&#xA;INSERT [dbo].[Almacenes] ([AlmacenID], [Almacen], [TerritorioID]) VALUES (744, N'First Department Stores', 1)&#xA;GO&#xA;INSERT [dbo]." xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -116,9 +124,453 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{902CD02C-5352-4CA0-9890-2AB9711A5BAB}"
+          SQLTask:Connection="{5CDAAC7F-606F-4BD8-A9F2-652D4163BF19}"
           SQLTask:SqlStatementSource="DROP DATABASE IF EXISTS BikeZ_DW;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Contenedor de secuencias"
+      DTS:DTSID="{FA53A599-970C-4E02-8A86-0C35C4846D07}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Secuencia Dimensión &quot;DIMCliente&quot;">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{350AF957-3309-4035-A39F-69197FC03412}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Carga DIMCliente"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="Asignar columnas de &quot;DIMCliente&quot;"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Inputs[Derived Column Input].Columns[ClienteID]"
+                          cachedDataType="i4"
+                          cachedName="ClienteID"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[ClienteID]" />
+                        <inputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Inputs[Derived Column Input].Columns[Nombre]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Nombre"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Nombre]" />
+                        <inputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Inputs[Derived Column Input].Columns[Apellido]"
+                          cachedDataType="wstr"
+                          cachedLength="50"
+                          cachedName="Apellido"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Apellido]" />
+                        <inputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Inputs[Derived Column Input].Columns[Sexo]"
+                          cachedDataType="wstr"
+                          cachedLength="1"
+                          cachedName="Sexo"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Sexo]" />
+                        <inputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Inputs[Derived Column Input].Columns[EstadoCivil]"
+                          cachedDataType="wstr"
+                          cachedLength="10"
+                          cachedName="EstadoCivil"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[EstadoCivil]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Output].Columns[cliente_id]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Output].Columns[cliente_id]"
+                          name="cliente_id"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Secuencia Dimensión "DIMCliente"\Carga DIMCliente\Leer de "Clientes".Outputs[OLE DB Source Output].Columns[ClienteID]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">ClienteID</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Output].Columns[cliente_nombre]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="102"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Output].Columns[cliente_nombre]"
+                          name="cliente_nombre"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Secuencia Dimensión "DIMCliente"\Carga DIMCliente\Leer de "Clientes".Outputs[OLE DB Source Output].Columns[Nombre]} + ", " + #{Package\Secuencia Dimensión "DIMCliente"\Carga DIMCliente\Leer de "Clientes".Outputs[OLE DB Source Output].Columns[Apellido]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">Nombre + ", " + Apellido</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Output].Columns[cliente_sexo]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="1"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Output].Columns[cliente_sexo]"
+                          name="cliente_sexo"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Secuencia Dimensión "DIMCliente"\Carga DIMCliente\Leer de "Clientes".Outputs[OLE DB Source Output].Columns[Sexo]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">Sexo</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Output].Columns[cliente_estado_civil]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          length="10"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Output].Columns[cliente_estado_civil]"
+                          name="cliente_estado_civil"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">#{Package\Secuencia Dimensión "DIMCliente"\Carga DIMCliente\Leer de "Clientes".Outputs[OLE DB Source Output].Columns[EstadoCivil]}</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">EstadoCivil</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Output].Columns[fecha_ini]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Output].Columns[fecha_ini]"
+                          name="fecha_ini"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">(DT_DBDATE)"2000-01-01"</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">(DT_DBDATE)"2000-01-01"</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Output].Columns[fecha_fin]"
+                          dataType="dbDate"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Output].Columns[fecha_fin]"
+                          name="fecha_fin"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">(DT_DBDATE)"2099-12-31"</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">(DT_DBDATE)"2099-12-31"</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="Leer de &quot;Clientes&quot;"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[Clientes]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">0</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[localhost.BikeZ_DB]"
+                      connectionManagerRefId="Package.ConnectionManagers[localhost.BikeZ_DB]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[ClienteID]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[ClienteID]"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[ClienteID]"
+                          name="ClienteID"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Nombre]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[Nombre]"
+                          length="50"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Nombre]"
+                          name="Nombre"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Apellido]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[Apellido]"
+                          length="50"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Apellido]"
+                          name="Apellido"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Sexo]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[Sexo]"
+                          length="1"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[Sexo]"
+                          name="Sexo"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[EstadoCivil]"
+                          dataType="wstr"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[EstadoCivil]"
+                          length="10"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].Columns[EstadoCivil]"
+                          name="EstadoCivil"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[ClienteID]"
+                          dataType="i4"
+                          name="ClienteID" />
+                        <externalMetadataColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[Nombre]"
+                          dataType="wstr"
+                          length="50"
+                          name="Nombre" />
+                        <externalMetadataColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[Apellido]"
+                          dataType="wstr"
+                          length="50"
+                          name="Apellido" />
+                        <externalMetadataColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[Sexo]"
+                          dataType="wstr"
+                          length="1"
+                          name="Sexo" />
+                        <externalMetadataColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output].ExternalColumns[EstadoCivil]"
+                          dataType="wstr"
+                          length="10"
+                          name="EstadoCivil" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[ClienteID]"
+                          dataType="i4"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[ClienteID]"
+                          name="ClienteID" />
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[Nombre]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[Nombre]"
+                          name="Nombre" />
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[Apellido]"
+                          dataType="wstr"
+                          length="50"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[Apellido]"
+                          name="Apellido" />
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[Sexo]"
+                          dataType="wstr"
+                          length="1"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[Sexo]"
+                          name="Sexo" />
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[EstadoCivil]"
+                          dataType="wstr"
+                          length="10"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[EstadoCivil]"
+                          name="EstadoCivil" />
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente.Paths[OLE DB Source Output]"
+                  endId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;.Inputs[Derived Column Input]"
+                  name="OLE DB Source Output"
+                  startId="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
     </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
@@ -129,23 +581,15 @@
       DTS:From="Package\Crear DW"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\Contenedor de secuencias" />
+      DTS:To="Package\Secuencia Dimensión &quot;DIMCliente&quot;" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{A8A5F5E5-F39C-40B6-8AA9-7193B7B7B2E1}"
-      DTS:From="Package\Crear y poblar DB"
+      DTS:DTSID="{6B8623D7-3F0D-4800-B9FC-F14BED6AA03B}"
+      DTS:From="Package\Limpiar DW"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
       DTS:To="Package\Crear DW" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
-      DTS:CreationName=""
-      DTS:DTSID="{1931B649-6290-4CA0-AD05-9C2350444843}"
-      DTS:From="Package\Limpiar DW"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 2"
-      DTS:To="Package\Crear y poblar DB" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -159,24 +603,24 @@
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente"
+          TopLeft="97,22" />
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
           PanelSize="356,203"
           Size="356,246"
-          Id="Package\Contenedor de secuencias"
-          TopLeft="186,529" />
-        <NodeLayout
-          Size="170,42"
-          Id="Package\Crear y poblar DB"
-          TopLeft="271,353" />
+          Id="Package\Secuencia Dimensión &quot;DIMCliente&quot;"
+          TopLeft="175,298" />
         <NodeLayout
           Size="170,42"
           Id="Package\Crear DW"
-          TopLeft="274,443" />
+          TopLeft="263,212" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="361.5,485">
+          TopLeft="350.5,254">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -188,28 +632,6 @@
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,36.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="357.5,395">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,48"
-              Start="0,0"
-              End="0,40.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,40.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -221,21 +643,21 @@
         <NodeLayout
           Size="170,42"
           Id="Package\Limpiar DW"
-          TopLeft="273,267" />
+          TopLeft="263,125" />
         <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="357,309">
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="348,167">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,44"
+              EndConnector="0,45"
               Start="0,0"
-              End="0,36.5">
+              End="0,37.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,36.5" />
+                    End="0,37.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -247,5 +669,56 @@
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="168,44"
+          Id="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;"
+          TopLeft="552,91" />
+        <NodeLayout
+          Size="240,42"
+          Id="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Asignar columnas de &quot;DIMCliente&quot;"
+          TopLeft="514,203" />
+        <EdgeLayout
+          Id="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente.Paths[OLE DB Source Output]"
+          TopLeft="635,135">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,68"
+              Start="0,0"
+              End="0,60.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,60.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Secuencia Dimensión &quot;DIMCliente&quot;\Carga DIMCliente\Leer de &quot;Clientes&quot;">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
